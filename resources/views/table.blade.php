@@ -16,6 +16,7 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @if(count($users))
                     @foreach($users as $user)
                     <tr>
                         <td>{{ $user['position'] }}</td>
@@ -26,7 +27,7 @@
                         <td style="font-weight: bold">{{ $user['points'] }}</td>
                     </tr>
                     @endforeach
-
+@endif
                 </table>
             </div>
         </div>

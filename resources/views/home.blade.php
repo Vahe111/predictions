@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 
-    @if(count($matches))
+    @if($matches)
     <form method="post" action="{{ route('saveResults') }}">
         {!! csrf_field() !!}
         <div class="row">

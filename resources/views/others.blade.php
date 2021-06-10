@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        @if($userPredictions)
+        @if($userPredictions && count($userPredictions))
             <div class="row">
 
                 @foreach($userPredictions as $userPrediction)

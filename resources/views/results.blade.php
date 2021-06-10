@@ -5,6 +5,7 @@
         @if($matches)
                 <div class="row">
                     <?php $i = 1; ?>
+                    @if(count($matches))
                     @foreach($matches as $match)
                         <div class="col-md-3" style="{{ $i % 2 == 0 ? "padding: 15px; background-color: silver" : "padding: 15px;" }}">
                             <div class="row" style="font-weight: bold;">
@@ -28,6 +29,7 @@
                         </div>
                         <?php $i++; ?>
                     @endforeach
+                        @endif
                 </div>
         @endif
 
